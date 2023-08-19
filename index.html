@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <!-- JAVASCRIPT -->
+        <script defer src="./assets/js/script.js"></script>
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+        <!-- TÍTULO DE PESTAÑA -->
+        <title>Condiciones de JavaScript</title>
+    </head>
+    <body>
+        <section class="border-section">
+            <h1>En esta sección puedes agregar y quitar un borde a la imagen haciendo clic en ella</h1>
+            <img
+                onclick="toggleBorder()"
+                id="img-border"
+                src="./assets/img/difusor.png"
+                alt="Difusor de aroma con tapa color blanco y base color madera café claro con gris"
+            />
+        </section>
+
+        <section class="sticker-section">
+            <h1>En esta sección puedes elegir una cantidad de stickers</h1>
+            <p>Recuerda que puedes seleccionar 10 stickers como máximo</p>
+            <div class="cards-container">
+                <div class="sticker-card">
+                    <img src="./assets/img/cat-sticker-01.jpg" alt="caricatura de gato redondo color amarillo tomado con palitos chinos"/>
+                    <input id="sticker01" type="number" min="0"/>
+                </div>
+                <div class="sticker-card">
+                    <img src="./assets/img/cat-sticker-02.jpg" alt="caricatura de gato color amarillo sentado de frente con la frase DON'T TELL ME WHAT TO DO"/>
+                    <input id="sticker02" type="number" min="0"/>
+                </div>
+                <div class="sticker-card">
+                    <img src="./assets/img/cat-sticker-03.jpg" alt="caricatura de gato color amarillo con lineas naranjas sentado frente a una mesa con envases químicos con la frase I HAVE NO IDEA WHAT I'M DOING"/>
+                    <input id="sticker03" type="number" min="0"/>
+                </div>
+            </div>
+            <button onclick="sendOrder()" id="order-btn">Seleccionar</button>
+            <p id="alert-msj"></p>
+        </section>
+
+        <section class="password-section">
+            <h1>Ingresa tu contraseña de tres dígitos</h1>
+            <div class="digit-box">
+                <select name="digit01" id="digit01">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="digit02" id="digit02">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="digit03" id="digit03">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <button onclick="sendPassword()" id="password-btn">Ingresar</button>
+            <p id="password-msj"></p>
+        </section>
+    </body>
+</html>

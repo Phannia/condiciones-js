@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+section {
+    padding: 2rem;
+    background-color: #33305e;
+    display: flex;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: white;
+}
+
+.border-section img {
+    width: 300px;
+    height: 300px;
+}
+
+.sticker-section .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sticker-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sticker-card img{
+    width: 200px;
+    height: 200px;
+}
+
+.sticker-card input{
+    width: 50px;
+}
+
+button {
+    padding: 0.4rem;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    border: 2px solid #ff6b02;
+    color: #ff6b02;
+}
+
+input, select {
+    padding: 0.3rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.digit-box {
+    display: flex;
+    gap: 1rem;
+}
